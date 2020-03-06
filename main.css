@@ -22,18 +22,9 @@ img {
     object-fit: contain;
 }
 
-img.profile-pic {
-	height: 30%;
-	width: 30%;
-	object-fit: cover;
-	border-radius: 50%;
-}
+img.profile-pic {	height: 30%; width: 30%; object-fit: cover;	border-radius: 50%; }
 
-.container {
-	margin: 0 auto;
-	position: relative;
-	height: 100%;
-}
+.container { margin: 0 auto; position: relative;	height: 100%; }
 
 .row {
 	display: flex;
@@ -58,35 +49,12 @@ img.profile-pic {
 	overflow: auto;
 }
 
-.col.is-1 {
-	flex: none;
-	width: 10%;
-}
-
-.col.is-2 {
-	flex: none;
-	width: 20%;
-}
-
-.col.is-3 {
-	flex: none;
-	width: 30%;
-}
-
-.col.is-4 {
-	flex: none;
-	width: 40%;
-}
-
-.col.is-5 {
-	flex: none;
-	width: 50%;
-}
-
-.col.is-6 {
-	flex: none;
-	width: 60%;
-}
+.col.is-1 {	flex: none; width: 10%; }
+.col.is-2 {	flex: none;	width: 20%; }
+.col.is-3 {	flex: none;	width: 30%; }
+.col.is-4 {	flex: none;	width: 40%; }
+.col.is-5 {	flex: none;	width: 50%; }
+.col.is-6 {	flex: none;	width: 60%; }
 
 .col.is-7 {
 	flex: none;
