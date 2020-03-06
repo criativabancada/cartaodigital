@@ -1,10 +1,5 @@
 html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  justify-content: center;
-}
+body { height: 100%; width: 100%; margin: 0; justify-content: center; }
 
 section {
 	display: block;
@@ -13,13 +8,8 @@ section {
 	height: auto;
 }
 
-p {
-	margin: 0.25rem !important;
-}
-
-a {
-	text-decoration: none;
-}
+p {	margin: 0.25rem !important; }
+a {	text-decoration: none; }
 
 img {
 	display: block;
