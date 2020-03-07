@@ -1,5 +1,5 @@
 :root {
-    --body-bg: url("assets/bg/pink-clouds.jpg");
+    --body-bg: url("assets/pink-clouds.jpg");
 		--accent: #f76a6a;
 }
 
@@ -30,10 +30,10 @@ footer { width: 100%; text-align: center; font: 11px Nunito, sans-serif;
     height: 35px; position: fixed; bottom: 0;	}
 footer img { margin: 0 0 -4px; width: 16px; height: 16px; }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (min-width: 600px) {
+.box { width: 35%; }
 }
 
-@media screen and (max-width: 480px) {
-
+@media screen and (min-width: 900px) {
+.box { width: 25%; }
 }
