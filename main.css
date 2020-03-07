@@ -23,8 +23,11 @@ img {
 }
 
 img.profile-pic {	height: 30%; width: 30%; object-fit: cover;	border-radius: 50%; }
+img.social-icons {	height: 30%; width: 30%; }
 
 .container { margin: 0 auto; position: relative;	height: 100%; }
+
+.social-media { margin: 0 auto; position: relative;	height: 100%; }
 
 .row {
 	display: flex;
