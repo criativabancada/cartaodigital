@@ -1,6 +1,7 @@
 :root {
-    --body-bg: url("assets/pink-clouds.jpg");
+    --body-bg: url("assets/bart-zimny.jpg");
 		--accent: #f76a6a;
+    --credits: #f76a6a;
 }
 
 * { margin: 0; padding: 0; border: 0; }
