@@ -4,35 +4,19 @@ ul, ol, li { list-style: none; }
 p {	margin: 0.25rem !important; }
 a {	text-decoration: none; }
 
-img {
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-}
-
-img.profile {	z-index: 100; border-radius: 50%; height: 80px; width: 80px; }
-
-body {
-	background-image: url("assets/bg/pink-clouds.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+body { background: url("assets/bg/pink-clouds.jpg") center/cover no-repeat; }
 
 .container { height: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; }
 
-.box { background: #fff; border-radius: 5%;
-	     margin: -40px auto 5%; height: 30%; width: 55%; }
+img.profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shadow: 0px 0px 11px 1px #f76a6a; height: 90px; width: 90px; }
+
+.box { background: #fff; border-radius: 5%; padding: 43px 0 0; box-shadow: 0px 0 20px 0px #ffffff;
+	     margin: -35px auto 5%; height: 30%; width: 55%; }
 
 .list {	text-align: center; }
-	.title { font-weight: bold; font-size: 20px;}
-	.subt{ display: flex; justify-content: center; flex-direction: row; align-items: center; }
-		.subt img{ margin: 0; height: 30px; width: 30px; }
+.list h1 { font-weight: bold; font-size: 20px;}
+.list h2 { font-size: 15px; font-weight: normal; display: flex; justify-content: center; flex-direction: row; align-items: center; }
+.list h2 img{ margin: 3% 0; height: 18px; width: 18px; }
 
 .social-media { text-align: center; }
 .social-media-item { margin: 0; width: auto; height: auto; display: inline-block; }
