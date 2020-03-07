@@ -1,26 +1,36 @@
-* { margin: 0; padding: 0; border: 0; }
-html, body { height: 100%; width: 100%; margin: 0; justify-content: center; font-family: 'Roboto', sans-serif;}
-ul, ol, li { list-style: none; }
-p {	margin: 0.25rem !important; }
-a {	text-decoration: none; }
+:root {
+    --body-bg: url("assets/bg/pink-clouds.jpg");
+		--accent: #f76a6a;
+}
 
-body { background: url("assets/bg/pink-clouds.jpg") center/cover no-repeat; }
+* { margin: 0; padding: 0; border: 0; }
+html, body { height: 100%; width: 100%; margin: 0; justify-content: center; font-family: 'Roboto', sans-serif;} ul, ol, li { list-style: none; }
+a {	text-decoration: none; color: var(--accent); }
+a:hover {	text-decoration: underline; }
+p {	margin: 0.25rem !important; }
+
+body { background: var(--body-bg) center/cover no-repeat; }
 
 .container { height: 100%; display: flex; justify-content: center; flex-direction: column; align-items: center; }
 
-img.profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shadow: 0px 0px 11px 1px #f76a6a; height: 90px; width: 90px; }
+img#profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shadow: 0px 0px 11px 1px var(--accent); height: 90px; width: 90px; }
 
-.box { background: #fff; border-radius: 5%; padding: 43px 0 0; box-shadow: 0px 0 20px 0px #ffffff;
-	     margin: -35px auto 5%; height: 30%; width: 55%; }
+.box { background: #fff; border-radius: 5%; padding: 43px 0 0; box-shadow: 0px 0 20px 0px #ffffff; margin: -35px auto 5%; height: 30%; width: 55%; }
 
 .list {	text-align: center; }
 .list h1 { font-weight: bold; font-size: 20px;}
 .list h2 { font-size: 15px; font-weight: normal; display: flex; justify-content: center; flex-direction: row; align-items: center; }
-.list img{ margin: 0 1% 0 0; height: 18px; width: 18px; }
+#loc { display: flex; justify-content: center; margin: 2% 0; }
+#loc img{ margin: 0 1% 0 0; height: 18px; width: 18px; }
 
-.social-media { text-align: center; }
+.social-media { text-align: center; } .social-media .item img {	width: 50px; }
 .social-media .item { margin: 0; width: auto; height: auto; display: inline-block; }
-.social-media .item img {	width: 50px; }
+
+footer { width: 100%; text-align: center; font: 10px Nunito, sans-serif;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+	}
 
 @media screen and (max-width: 600px) {
 

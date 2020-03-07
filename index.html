@@ -3,35 +3,36 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lato&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Nunito:wght@200&family=Lato&family=Roboto+Condensed&display=swap" rel="stylesheet">
   <title>Title</title>
 </head>
 
 <body>
 <div class="container">
-
-  <img class="profile" src="me.jpg" alt="Foto de perfil">
-
+  <img id="profile" alt="Foto de perfil">
   <div class="box">
     <ul class="list">
       <li><h1 id="name"></h1></li>
-      <li style="display: flex; justify-content: center; margin: 2% 0;"><img src="assets/icon-location.svg" alt=""><h2 id="local"></h2></li>
+      <li id="loc"><img src="assets/icon-location.svg"><h2 id="local"></h2></li>
       <li><h3 id="title"></h3></li>
       <li id="item1"></li>
       <li id="item2"></li>
       <li id="item3"></li>
     </ul>
   </div>
-
   <ul class="social-media">
     <a id="wpp"><li class="item"> <img id="icon-wpp" alt="WhatsApp"></li></a>
     <a id="fb"><li class="item"> <img id="icon-fb" alt="Facebook"></li></a>
-    <a id="insta"><li class="item"><img id="icon-insta" src="" alt="Instagram"></li></a>
+    <a id="insta"><li class="item"><img id="icon-insta" alt="Instagram"></li></a>
     <a id="mail"><li class="item"><img id="icon-mail" alt="Mandar e-mail"></li></a>
     <a id="phone"><li class="item"><img id="icon-phone" alt="Salvar contato"></li></a>
   </ul>
+  <footer>
+    2020 &copy; <a href="http://instagram.com/criativabancada">Bancada Criativa</a> - Soluções para Empreendedores
+  </footer>
 </div>
   <script>
+    document.getElementById("profile").src = "me.jpg";
     document.getElementById("name").innerHTML = "Andressa Tessari";
     document.getElementById("local").innerHTML = "Santo André - SP";
     document.getElementById("title").innerHTML = "Title:";
@@ -42,7 +43,7 @@
     document.getElementById("icon-wpp").src = "assets/miu-flat-social/miu-flat-social-whatsapp.svg";
     document.getElementById("fb").href = "http://facebook.com";
     document.getElementById("icon-fb").src = "assets/miu-flat-social/miu-flat-social-facebook.svg";
-    document.getElementById("insta").href = "http://instagram.com";
+    document.getElementById("insta").href = "http://instagram.com/criativabancada";
     document.getElementById("icon-insta").src = "assets/miu-flat-social/miu-flat-social-instagram.svg";
     document.getElementById("mail").href = "mailto:andressaptessari@gmail.com";
     document.getElementById("icon-mail").src = "assets/miu-flat-social/miu-flat-social-mail.svg";
