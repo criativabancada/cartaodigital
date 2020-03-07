@@ -1,59 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lato&family=Roboto+Condensed&display=swap" rel="stylesheet">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lato&family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <title>Title</title>
 </head>
 
 <body>
 <div class="container">
 
-<img class="profile" src="me.jpg" alt="Foto de perfil">
+  <img class="profile" src="me.jpg" alt="Foto de perfil">
 
-<div class="box">
-  <ul class="list Roboto">
-    <li><h1 class="Lato">Andressa Tessari</h1></li>
-    <li><h2 class="roboto-condensed"><img src="assets/icon-location.svg" alt="">Santo André - SP</h2></li>
-    <li><h3>Serviços:</h3></li>
-    <li>Cartões interativos</li>
-    <li>Currículos Personalizados</li>
-    <li>Planilhas Dinâmicas</li>
-  </ul>
-</div>
+  <div class="box">
+    <ul class="list">
+      <li><h1 id="name"></h1></li>
+      <li style="display: flex; justify-content: center; margin: 2% 0;"><img src="assets/icon-location.svg" alt=""><h2 id="local"></h2></li>
+      <li><h3 id="title"></h3></li>
+      <li id="item1"></li>
+      <li id="item2"></li>
+      <li id="item3"></li>
+    </ul>
+  </div>
 
   <ul class="social-media">
-    <a href="https://api.whatsapp.com/send?phone=5511993001622&text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20seus%20serviços">
-      <li class="social-media-item">
-        <img src="assets/miu-flat-social/miu-flat-social-whatsapp.svg" alt="WhatsApp">
-      </li>
-    </a>
-    <a href="">
-      <li class="social-media-item">
-        <img src="assets/miu-flat-social/miu-flat-social-facebook.svg" alt="Facebook">
-      </li>
-    </a>
-    <a href="">
-      <li class="social-media-item">
-        <img src="assets/miu-flat-social/miu-flat-social-instagram.svg" alt="Instagram">
-      </li>
-    </a>
-    <a href="mailto:andressaptessari@gmail.com">
-      <li class="social-media-item">
-        <img src="assets/miu-flat-social/miu-flat-social-mail.svg" alt="Contato">
-      </li>
-    </a>
-    <a href="user.vcf">
-      <li class="social-media-item">
-        <img src="assets/icon-phone.svg" alt="Contato">
-      </li>
-    </a>
+    <a id="wpp"><li class="item"> <img id="icon-wpp" alt="WhatsApp"></li></a>
+    <a id="fb"><li class="item"> <img id="icon-fb" alt="Facebook"></li></a>
+    <a id="insta"><li class="item"><img id="icon-insta" src="" alt="Instagram"></li></a>
+    <a id="mail"><li class="item"><img id="icon-mail" alt="Mandar e-mail"></li></a>
+    <a id="phone"><li class="item"><img id="icon-phone" alt="Salvar contato"></li></a>
   </ul>
-
 </div>
-</body>
-
-</html>
+  <script>
+    document.getElementById("name").innerHTML = "Andressa Tessari";
+    document.getElementById("local").innerHTML = "Santo André - SP";
+    document.getElementById("title").innerHTML = "Title:";
+    document.getElementById("item1").innerHTML = "Item 1";
+    document.getElementById("item2").innerHTML = "Item 2";
+    document.getElementById("item3").innerHTML = "Item 3";
+    document.getElementById("wpp").href = "https://api.whatsapp.com/send?phone=5511993001622&text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20seus%20serviços";
+    document.getElementById("icon-wpp").src = "assets/miu-flat-social/miu-flat-social-whatsapp.svg";
+    document.getElementById("fb").href = "http://facebook.com";
+    document.getElementById("icon-fb").src = "assets/miu-flat-social/miu-flat-social-facebook.svg";
+    document.getElementById("insta").href = "http://instagram.com";
+    document.getElementById("icon-insta").src = "assets/miu-flat-social/miu-flat-social-instagram.svg";
+    document.getElementById("mail").href = "mailto:andressaptessari@gmail.com";
+    document.getElementById("icon-mail").src = "assets/miu-flat-social/miu-flat-social-mail.svg";
+    document.getElementById("phone").href = "user.vcf";
+    document.getElementById("icon-phone").src = "assets/icon-phone.svg";
+  </script>
+</body></html>

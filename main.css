@@ -1,5 +1,5 @@
 * { margin: 0; padding: 0; border: 0; }
-html, body { height: 100%; width: 100%; margin: 0; justify-content: center; }
+html, body { height: 100%; width: 100%; margin: 0; justify-content: center; font-family: 'Roboto', sans-serif;}
 ul, ol, li { list-style: none; }
 p {	margin: 0.25rem !important; }
 a {	text-decoration: none; }
@@ -16,16 +16,11 @@ img.profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shad
 .list {	text-align: center; }
 .list h1 { font-weight: bold; font-size: 20px;}
 .list h2 { font-size: 15px; font-weight: normal; display: flex; justify-content: center; flex-direction: row; align-items: center; }
-.list h2 img{ margin: 3% 0; height: 18px; width: 18px; }
+.list img{ margin: 0 1% 0 0; height: 18px; width: 18px; }
 
 .social-media { text-align: center; }
-.social-media-item { margin: 0; width: auto; height: auto; display: inline-block; }
-
-.social-media-item img {	width: 50px; }
-
-.Roboto { font-family: 'Roboto', sans-serif; }
-.Lato { font-family: 'Lato', sans-serif; }
-.Roboto-Condensed { font-family: 'Roboto Condensed', sans-serif; }
+.social-media .item { margin: 0; width: auto; height: auto; display: inline-block; }
+.social-media .item img {	width: 50px; }
 
 @media screen and (max-width: 600px) {
 
