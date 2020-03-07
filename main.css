@@ -29,7 +29,7 @@ img.profile-pic {	display: block; height: 30%; width: 30%; object-fit: cover;	bo
 .social-media { text-align: center; }
 .social-media-item { margin: 0; width: auto; height: auto; display: inline-block; }
 
-.social-media-item img {	width: 100px; }
+.social-media-item img {	width: 50px; }
 
 .row {
 	display: flex;
