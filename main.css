@@ -1,5 +1,8 @@
-html,
-body { height: 100%; width: 100%; margin: 0; justify-content: center; }
+* { margin: 0; padding: 0; border: 0; }
+html, body { height: 100%; width: 100%; margin: 0; justify-content: center; }
+ul, ol, li { list-style: none; }
+p {	margin: 0.25rem !important; }
+a {	text-decoration: none; }
 
 section {
 	display: block;
@@ -7,9 +10,6 @@ section {
 	padding-right: 0.5rem;
 	height: auto;
 }
-
-p {	margin: 0.25rem !important; }
-a {	text-decoration: none; }
 
 img {
 	display: block;
@@ -27,7 +27,9 @@ img.social-icons {	height: 30%; width: 30%; }
 
 .container { margin: 0 auto; position: relative;	height: 100%; }
 
-.social-media { margin: 0 auto; position: relative;	height: 100%; }
+.social-media { text-align: center; }
+.social-media-item { width: 30%; height: 30%; display: inline-block; }
+.social-media-item img {	height: 30%; width: 30%; }
 
 .row {
 	display: flex;
