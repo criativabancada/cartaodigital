@@ -1,12 +1,12 @@
 :root {
     --body-bg: url("assets/bart-zimny.jpg");
-		--accent: #f76a6a;
-    --credits: #f76a6a;
+		--accent: #fff;
+    --credits: #fff;
 }
 
 * { margin: 0; padding: 0; border: 0; }
 html, body { height: 100%; width: 100%; margin: 0; justify-content: center; font-family: 'Roboto', sans-serif;} ul, ol, li { list-style: none; }
-a {	text-decoration: none; color: black; }
+a {	text-decoration: none; color: var(--credits) }
 a:hover {	text-decoration: underline; }
 p {	margin: 0.25rem !important; }
 
@@ -27,8 +27,7 @@ img#profile {	z-index: 100; border-radius: 50%; border: 4px #fff solid; box-shad
 .social-media { text-align: center; } .social-media .item img {	width: 50px; }
 .social-media .item { margin: 0; width: auto; height: auto; display: inline-block; }
 
-footer { width: 100%; text-align: center; font: 11px Nunito, sans-serif;
-    height: 35px; position: fixed; bottom: 0;	}
+footer { width: 100%; text-align: center; font: 11px Nunito, sans-serif; height: 35px; position: fixed; bottom: 0;	color: var(--credits)}
 footer img { margin: 0 0 -4px; width: 16px; height: 16px; }
 
 @media screen and (min-width: 600px) {
